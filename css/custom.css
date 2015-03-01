@@ -1,15 +1,28 @@
+@import url(http://www.markmurray.co/codepen/entypostyle.css);
+
+$facebook:   #3b5998;
+$twitter:    #00a0d1;
+$gplus:      #db4a39;
+$pinterest:  #c8232c;
+$dribbble:   #ea4c89;
+$navy: #34495e;
+
+@mixin gradient($color){
+   @include background-image(linear-gradient(top, $color, darken($color, 10%))); 
+}
+
 html {
-  background: #6C7989;
-  background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
-  background: #6c7989 -webkit-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -moz-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -o-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -ms-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 linear-gradient(#6c7989, #434b55) fixed;
+  background: #8B7765;
+  background: #8B7765 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8B7765), color-stop(100%, #8B7765)) fixed;
+  background: #8B7765 -webkit-linear-gradient(#8B7765, #8B7765) fixed;
+  background: #8B7765 -moz-linear-gradient(#8B7765, #8B7765) fixed;
+  background: #8B7765 -o-linear-gradient(#8B7765, #8B7765) fixed;
+  background: #8B7765 -ms-linear-gradient(#8B7765, #8B7765) fixed;
+  background: #8B7765 linear-gradient(#8B7765, #8B7765) fixed;
 }
 
 body {
-  padding: 50px 0;
+  padding: 70px 50px;
   margin: 0;
   font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
@@ -18,7 +31,7 @@ body {
 }
 
 .wrapper {
-  width: 990px;
+  width: 1500px;
   margin: 0 auto;
   background: #DEDEDE;
   -webkit-border-radius: 8px;
@@ -49,19 +62,86 @@ header {
 }
 header.without-description h1 {
   margin: 5px 0;
+  }
 
-.stickyFooter {
-     position: fixed;
-     bottom: 0px;
-     width: 100%;
-     overflow: visible;
-     z-index: 99;
-     padding-top: 5px;
-     padding-bottom: 3px;
-     background: white;
-     border-top: solid white 2px;
-     background-color: #89D4DF;
-     -webkit-box-shadow: 0px -5px 15px 0px #bfbfbf;
-     box-shadow: 0px -5px 15px 0px #bfbfbf;
-     height: 34px;
+
+.container {
+  width: 25em;
+  margin: 0 auto 3em auto;
+  text-align: center;
+  overflow: hidden;
+  font-size: fixed;
 }
+.container p {
+font-size: 10px;
+color: white;
+}
+
+.row {
+  margin: 0.5em 0;
+  float: left;
+  clear: both;
+}
+.row i {
+  cursor: pointer;
+  display: inline-block;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.row:nth-child(1) {
+  background: transparent;
+  margin-top: 2em !important;
+}
+.row:nth-child(1) i {
+  color: #34495e;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 0.5em;
+  position: relative;
+  background: transparent;
+}
+.row:nth-child(1) i:hover {
+  top: -2px;
+  border-radius: 50%;
+  color: white !important;
+}
+.row:nth-child(1) i:not(:first-child) {
+  margin-left: 1em;
+}
+.row:nth-child(1) i:nth-child(1) {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+.row:nth-child(1) i:nth-child(2) {
+  color: #00a0d1;
+  border-color: #00a0d1;
+}
+.row:nth-child(1) i:nth-child(3) {
+  color: #db4a39;
+  border-color: #db4a39;
+}
+.row:nth-child(1) i:nth-child(4) {
+  color: #c8232c;
+  border-color: #c8232c;
+}
+.row:nth-child(1) i:nth-child(5) {
+  color: #ea4c89;
+  border-color: #ea4c89;
+}
+.row:nth-child(1) i:nth-child(1):hover {
+  background: #3b5998;
+}
+.row:nth-child(1) i:nth-child(2):hover {
+  background: #00a0d1;
+}
+.row:nth-child(1) i:nth-child(3):hover {
+  background: #db4a39;
+}
+.row:nth-child(1) i:nth-child(4):hover {
+  background: #c8232c;
+}
+.row:nth-child(1) i:nth-child(5):hover {
+  background: #ea4c89;
