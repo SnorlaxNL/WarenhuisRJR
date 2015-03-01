@@ -6,6 +6,7 @@ $gplus:      #db4a39;
 $pinterest:  #c8232c;
 $dribbble:   #ea4c89;
 $navy: #34495e;
+$ion-android-home:#xf38f;
 
 @mixin gradient($color){
    @include background-image(linear-gradient(top, $color, darken($color, 10%))); 
