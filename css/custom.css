@@ -30,85 +30,24 @@ body {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
-
-table {
-border: 1px solid blue ;
-background-color: grey
+header {
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  background: #C6EAFA;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
+  background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
+  background: -moz-linear-gradient(#ddfbfc, #c6eafa);
+  background: -o-linear-gradient(#ddfbfc, #c6eafa);
+  background: -ms-linear-gradient(#ddfbfc, #c6eafa);
+  background: linear-gradient(#ddfbfc, #c6eafa);
+  position: relative;
+  padding: 7px 10px;
+  border-bottom: 1px solid #B2D2E1;
 }
+header.without-description h1 {
+  margin: 5px 0;
 
 
-#menu ul {  
-list-style-type: none;  
-}  
-#menu ul li {  
-display: inline;  
-margin: 0;  
-}  
-#menu ul li a {   
-padding: 15px;  
-background-color: #44699C;  
-font-family: Verdana;  
-color: white;  
-} 
-#menu ul li a:hover {  
-background-color: #5F94DC;  
-}  
-
-a {
-    text-decoration: none;
-}
-
-#ddmenu div.dropdown {
-    background-color:rgba(0,0,0,0.2);
-    background-color:#ccc \9;/*fallback for old IE*/
-}
-
-#sddm
-{	margin: 0;
-	padding: 0;
-	z-index: 30}
-
-#sddm li
-{	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: left;
-	font: bold 15px arial}
-
-#sddm li a
-{	display: block;
-	margin: 0 1px 0 0;
-	padding: 20px 80px;
-	width: 60px;
-	background: #5970B2;
-	color: #FFF;
-	text-align: center;
-	text-decoration: none}
-
-#sddm li a:hover
-{	background: #49A3FF}
-
-#sddm div
-{	position: absolute;
-	visibility: hidden;
-	margin: 0;
-	padding: 0;
-	background: #EAEBD8;
-	border: 1px solid #5970B2}
-
-	#sddm div a
-	{	position: relative;
-		display: block;
-		margin: 0;
-		padding: 5px 80px;
-		width: auto;
-		white-space: nowrap;
-		text-align: left;
-		text-decoration: none;
-		background: #EAEBD8;
-		color: #2875DE;
-		font: 11px arial}
-
-	#sddm div a:hover
-	{	background: #49A3FF;
-		color: #FFF}
