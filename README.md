@@ -1,2 +1,0 @@
-# WarenhuisRJR
-Warenhuis van ons.
