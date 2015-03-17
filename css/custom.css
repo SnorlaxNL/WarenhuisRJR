@@ -155,6 +155,8 @@ color: white;
    -o-transition: all 0.2s linear;
    -ms-transition: all 0.2s linear;
    transition: all 0.2s linear;
+    width: 300px;
+   height: 200px;
 }
 .view-first .mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";

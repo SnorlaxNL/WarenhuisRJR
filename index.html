@@ -94,24 +94,27 @@
 	    
 <h2> Populaire artiekelen </h2>	
   <div class="main">
+  
                 <div class="view view-first">
                     <img src="LG TV.jpg" />
                     <div class="mask">
                         <h2>LG TV 32"</h2>
                         <p>Deze tv is geoptimaliseerd voor het aantal pixels wat er in zitten. Wilt U meer informatie, ga dan naar <a href="#contact" data-toggle="modal">Contact</a></p>
-                        <a class="info" href="#winkelwagen" data-toggle="modal">Toevoegen aan winkelmand</a>
+                        <a class="info" href="#winkelwagen-TV" data-toggle="modal">Toevoegen aan winkelmand</a>
                     </div>
 					
                 </div>  
+			
+				
                 <div class="view view-first">
-                    <img src="images/2.jpg" />
+                    <img src="Shirt1.jpg" />
                     <div class="mask">
-                        <h2>Hover Style #1</h2>
-                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                        <a href="#" class="info">Read More</a>
+                        <h2>EMBROIDERED - T-shirt basic</h2>
+                        <p>Dit T-shirt met V-hals heeft een opgestikt vintage Superdry logo op de borst .Wilt U meer informatie, ga dan naar <a href="#contact" data-toggle="modal">Contact</a></p>
+                        <a class="info" href="#winkelwagen-Shirt1" data-toggle="modal">Toevoegen aan winkelmand</a>
                     </div>
-                </div>  
-                <div class="view view-first">
+                </div> 
+      <div class="view view-first">
                     <img src="images/3.jpg" />
                     <div class="mask">
                         <h2>Hover Style #1</h2>
@@ -126,7 +129,8 @@
                         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                         <a href="#" class="info">Read More</a>
                     </div>
-                </div>  
+                </div> 				
+              
             </div>
 			<br> </br>
 			<br> </br>
@@ -136,6 +140,7 @@
 			<br> </br>
  <p><h2>Onze tips</h2></p>
  <div class="main">
+ 
                 <div class="view view-first">
                     <img src="LG TV.jpg" />
                     <div class="mask">
@@ -266,23 +271,42 @@
 		</div>
 	</div>
 </div>	
+<!-- Modals voor toevoegen aan winkelmand! -->
 
-<!-- Modal Winkelwagen -->
-<div class="modal fade" id="winkelwagen" role="dialog" aria-labelledby="winkelwagen" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Toevoegen aan winkelwagenr</h4>
-				</div>
-				<div class="modal-body">
-					MOIIIIIIIIIIIIIIIIIIIIIIIIIII
-				</div>
-				<div class="modal-footer">
-					<a class="btn btn-danger" data-dismiss="modal">Annuleren</a>
+		<!-- Modal Winkelwagen LG TV -->
+		<div class="modal fade" id="winkelwagen-TV" role="dialog" aria-labelledby="winkelwagen-TV" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Toevoegen aan winkelwagenr</h4>
+						</div>
+						<div class="modal-body">
+							MOIIIIIIIIIIIIIIIIIIIIIIIIIII
+						</div>
+						<div class="modal-footer">
+							<a class="btn btn-danger" data-dismiss="modal">Annuleren</a>
+						</div>
+					</div>
+					</div>
+			</div>
+	
+		<!-- Modal Winkelwagen Shirt1. -->
+		<div class="modal fade" id="winkelwagen-Shirt1" role="dialog" aria-labelledby="winkelwagen-Shirt1" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Toevoegen aan winkelwagen</h4>
+						</div>
+						<div class="modal-body">
+							JOOOOOOOOOOOOOOOOOOOOO
+						</div>
+						<div class="modal-footer">
+							<a class="btn btn-danger" data-dismiss="modal">Annuleren</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+<!-- einde modals winkelwagens -->			
 	
 <!-- Modal Inloggen -->
 <div class="modal fade" id="inloggen" role="dialog" aria-labelledby="inloggen" aria-hidden="true">
@@ -325,26 +349,57 @@
 				</div>
 				<div class="modal-body">
 				<div class="form-group">
-					<label for="name" class="col-sm-2 control-label">Voornaam:</label>
-					<input type="text" class="form-control required" id="name" name="Voornaam" placeholder="jan">
+			<label for="name" class="col-sm-2 control-label">E-mail:</label><br>
+					<input type="text" class="form-control required" id="name" name="E-mail" placeholder="jan.beton@gmail.com">
+					</div>
 					
-				</div>
+					<div class="form-group">
+			<label for="name" class="col-sm-2 control-label">Wachtwoord:</label><br>
+					<input type="password" class="form-control required" id="name" name="E-mail" placeholder="">
+					</div>
+					
+					<div class="form-group">
+			<label for="name" class="col-sm-2 control-label">Aanhef:</label><br>
+			<p>
+					<input type="radio" id="name" name="Aanhef" value="man" checked>Man
+					<input type="radio" id="name" name="Aanhef" value="vrouw" checked>Vrouw
+					</p></div> 
+					
 				<div class="form-group">
-					<label for="name" class="col-sm-2 control-label">Tussenvoegsel:</label>
-					<input type="text" class="form-control required" id="name" name="Tussenvoegsel" placeholder="">
-				</div>		
-				<div class="form-group">
-	<label for="name" class="col-sm-2 control-label">Achternaam:</label>
+					<label for="name" class="col-sm-2 control-label">Voornaam:</label><br>
+					<input type="text" class="form-control required" id="name" name="Voornaam" placeholder="jan">
+					</div>
+					
+			<div class="form-group">
+	<label for="name" class="col-sm-2 control-label">Achternaam:</label><br>
 					<input type="text" class="form-control required" id="name" name="Achternaam" placeholder="Beton">
 			</div>
 			<div class="form-group">
-			<label for="name" class="col-sm-2 control-label">E-mail:</label>
-					<input type="text" class="form-control required" id="name" name="E-mail" placeholder="jan.beton@gmail.com">
+			<label for="name" class="col-sm-2 control-label">Telefoonnummer:</label><br>
+					<input type="text" class="form-control required" id="name" name="E-mail" placeholder="06-12345678">
 					</div>
+					
 					<div class="form-group">
-			<label for="name" class="col-sm-2 control-label">E-mail:</label>
-					<input type="text" class="form-control required" id="name" name="E-mail" placeholder="jan.beton@gmail.com">
+			<label for="name" class="col-sm-2 control-label">Adres:</label><br>
+					<input type="text" class="form-control required" id="name" name="E-mail" placeholder="Hoofdstraat 2">
 					</div>
+					
+					<div class="form-group">
+			<label for="name" class="col-sm-2 control-label">Postcode:</label><br>
+					<input type="text" class="form-control required" id="name" name="E-mail" placeholder="1001 FD">
+					</div>
+					
+					<form action="demo_form.asp">
+<label for="name" class="col-sm-2 control-label">Land:</label><br>
+  <select name="Land" align=left>
+    <option value="volvo">Volvo XC90</option>
+    <option value="saab">Saab 95</option>
+    <option value="mercedes">Mercedes SLK</option>
+    <option value="audi">Audi TT</option>
+  </select>
+
+</form>
+	
 			</div>
 				<div class="modal-footer">
 				<a class="btn btn-danger" data-dismiss="modal">Annuleren</a>
