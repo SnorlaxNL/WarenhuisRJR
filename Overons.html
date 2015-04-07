@@ -23,6 +23,14 @@
 		<!-- Je eigen CSS -->
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 		
+		 <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      widtautoh: 70%;
+    
+  }
+  </style>
+		
 	</head>
 	<body>
 	
@@ -90,16 +98,64 @@
 <div class="wrapper">
 <header class="without-description">
         <h1>Over Ons.</h1>
+	
        
        
       </header>
-	    
-<p> Dit is een project voor Informatica.</p>
-<p>We hebben de opdracht van meneer Piontek gekregen om een webshop te maken.
-Dit hebben we dus uitgevoerd.</p>
-<p>Deze website is gemaakt door middel van HTML, CSS, Javascript en Bootstrap (hulpmiddel voor Javascript)</p>
-Deze tekst wordt beter en uitgebreider beschreven door Jasper Bakker.
-</p>
+	    	<p> Wij, Jasper Robbert en Rick. Zijn met zijn 3en een webshop gaan maken. We zijn allemaal 16 jaar oud. </p>
+		<p> We zitten op de locatie Lariks te Assen. Wilt U meer informatie over waar wij zitten? Zie hier onder een aantal foto's en de locatie op google maps. </p>
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="images/csvvg1.jpg" alt="Chania" width="4600" height="345">
+        <div class="carousel-caption">
+          <h3>De school</h3>
+          <p>Hier ziet u de school in zijn huidige staat.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/csvvg2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>De school</h3>
+          <p>Hier ziet u de school in zijn huidige staat.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/csvvg3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+           <h3>De school</h3>
+          <p>Hier ziet u de school in zijn huidige staat.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
 
 
