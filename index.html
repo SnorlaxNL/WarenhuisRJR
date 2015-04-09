@@ -443,14 +443,15 @@
 				<div class="modal-header">
 					<h4 class="modal-title">Inloggen</h4>
 				</div>
+				<form action="index.php" method="post">
 				<div class="modal-body">
 				<div class="form-group">
 					<label for="name" class="col-sm-2 control-label">Emailadres:</label>
-					<input type="text" class="form-control required" id="name" name="name" placeholder="jan.beton@gmail.com">	
+					<input type='text' class="form-control required" id="name" name='EmailKL' placeholder="jan.beton@gmail.com">	
 				</div>
 				<div class="form-group">
 					<label for="name" class="col-sm-2 control-label">Wachtwoord:</label>
-					<input type="text" class="form-control required" id="name" name="name" placeholder="Wachtwoord">
+					<input type='password' class="form-control required" id="name" name='WachtwoordKL' placeholder="Wachtwoord">
 				</div>		
 	
 			</div>
@@ -459,8 +460,8 @@
 				<a href="#aanmelden" data-toggle="modal">Aanmelden</a>
 				</p>
 				<a class="btn btn-danger" data-dismiss="modal">Annuleren</a>
-					<button type="button" class="btn btn-primary">Log in</button>
-					
+					<button <input type='submit' value='Login' name='login'type="button"  class="btn btn-primary" />Log in</button>
+				</form>	
 				</div>
 			</div>
 		</div>
