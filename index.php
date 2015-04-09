@@ -21,7 +21,7 @@ if ($_POST['login']){
 		setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
 		$klantID = $klant['KlantNR'];
 		mysql_query("UPDATE `klant` SET 'Salt'='$salt' WHERE 'KlantNR'='$klantID'");
-		die("U bent nu ingelogged als $EmailKL!");
+		die("U bent nu ingelogged als $EmailKL!<a href='index.php'>&larr; Ga terug</a>"");
 		
 	}
 }

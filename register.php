@@ -39,35 +39,35 @@ if ($_POST['register']){
 		}
 		$check = mysql_fetch_array(mysql_query("SELECT * FROM `klant` WHERE `EmailKL`='$EmailKL'"));
 		if ($check != '0'){
-			die("Dit E-mail adres bestaat al! Probeer een andere.<a href='register.php'>&larr; Ga terug</a>");	
+			die("Dit E-mail adres bestaat al! Probeer een andere.<a href='index.html'>&larr; Ga terug</a>");	
 		}
 		if (!ctype_alnum($PlaatsKL)){
-			die("Uw plaats bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw plaats bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		if (!ctype_alnum($LandKL)){
-			die("Uw land bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw land bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		if (!ctype_alnum($TelNrKL)){
-			die("Uw telefoon nummer bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw telefoon nummer bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		if (!ctype_alnum($IBANKL)){
-			die("Uw IBAN bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw IBAN bevat speciale tekens! Alleen letters en cijfers zijn toegestaan!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		if (strlen($PostcodeKL) > 6){
-			die("Uw postcode mag niet meer dan 6 tekens bevatten!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw postcode mag niet meer dan 6 tekens bevatten!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		if (strlen($TelNrKL) > 10){
-			die("Uw Telefoon nummer mag niet meer dan 10 tekens bevatten!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw Telefoon nummer mag niet meer dan 10 tekens bevatten!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		if (strlen($IBANKL) > 18){
-			die("Uw IBAN mag niet meer dan 18 tekens bevatten!<a href='register.php'>&larr; Ga terug</a>");
+			die("Uw IBAN mag niet meer dan 18 tekens bevatten!<a href='index.html'>&larr; Ga terug</a>");
 		}
 		$salt = hash("sha512", rand() . rand() . rand());
 		mysql_query("INSERT INTO `klant` (`EmailKL`, `WachtwoordKL`, `NaamKL`, `AdresKL`, `PostcodeKL`, `PlaatsKL`, `LandKL`, `TelNrKL`, `IBANKL`, `Salt`) VALUES ('$EmailKL', '$WachtwoordKL', '$NaamKL', '$AdresKL', '$PostcodeKL', '$PlaatsKL', '$LandKL', '
 		$TelNrKL', '$IBANKL', '$salt')");
 		setcookie("c_klant", hash("sha512", $EmailKL), time() + 24 * 60 * 60, "/");
 		setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
-		die("Uw account is aangemaakt en u bent nu ingelogged.");
+		die("Uw account is aangemaakt en u bent nu ingelogged.<a href='index.html'>&larr; Ga terug");
 	}
 }
 echo "
